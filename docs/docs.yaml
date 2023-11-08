@@ -1,0 +1,8 @@
+#todo Вернуть ссылку на БА в welcome.md, либо переработать текст двух статей в одну
+docs:
+  dochub.welcome:
+      title: Экосистемная архитектура
+      type: markdown      # Тип документа
+      source: welcome.md  # Файл с документом
+
+  
