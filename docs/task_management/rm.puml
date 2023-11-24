@@ -1,0 +1,45 @@
+@startgantt
+!theme lightgray
+<style>
+ganttDiagram {
+
+	task {
+		$primary_scheme()
+        FontColor #111111
+        FontName Arial
+		LineColor #000000
+		Margin 2
+		Padding 6
+	}
+}
+</style>
+
+printscale weekly with calendar date zoom 5
+Project starts 2023-10-23
+
+
+
+[Нормализация внешнего продуктового ландшафта] as [s01] starts 2023-11-01 and ends 2023-11-30
+[Нормализация внутреннего продуктового ландшафта] as [s02] starts 2023-11-07 and ends 2023-12-07
+[Мэппинг человеческих ресурсов на Продукты] as [s03] starts 2023-10-23 and ends 2023-12-14
+[Описание процессного ландшафта (реверс структуры BPMN)] as [s04] starts 2023-10-23 and ends 2024-01-15
+[Построение цепочек ценности] starts 2023-11-16 and requires 10 days
+[Описание мотиваций стейкхолдеров] starts 2023-11-16 and requires 10 days
+[Определение стратегии развития, KPI] starts 2023-11-16 and requires 10 days
+[Управление изменениями] starts 2023-11-16 and requires 10 days
+[Управление требованиями к автоматизации] starts 2023-11-16 and requires 10 days
+[Клиентские пути] starts 2023-11-16 and requires 10 days
+[Формирование карты способностей] starts 2023-11-16 and requires 10 days
+
+[s01] is 75% completed
+[s02] is 50% completed
+[s03] pauses from 2023-10-27 to 2023-12-01 and is 10% completed
+
+[s04] pauses from 2023-10-27 to 2023-12-15
+
+' 2023-10-23 to 2023-10-31 are named [Earlier]
+' 2023-11-01 to 2023-12-31 are named [Current activities]
+' 2024-01-01 to 2024-03-30 are named [Future activities]
+
+@endgantt
+

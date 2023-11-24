@@ -1,4 +1,3 @@
-#todo Вернуть ссылку на БА в welcome.md, либо переработать текст двух статей в одну
 docs:
   dochub.welcome:
     title: Экосистемная архитектура
@@ -11,4 +10,21 @@ docs:
     type: markdown
     source: ba_tutorial.md
 
-  
+  # Task management
+  eco_methodology_roadmap:
+    title: Дорожная карта экосистемной архитектуры
+    location: Задачи/Дорожная карта экосистемной архитектуры
+    type: markdown
+    source: task_management/rm.md
+
+  eco_methodology_roadmap_graph:
+    title: граф Дорожной карты экосистемной архитектуры
+  #  location: Задачи
+    type: PlantUml
+    source: task_management/rm.puml
+
+  eco_methodology_board:
+    title: Борд экосистемной архитектуры
+  #  location: Задачи
+    type: PlantUml
+    source: task_management/board.puml
