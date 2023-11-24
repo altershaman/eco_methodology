@@ -33,14 +33,22 @@ seaf.ba.ttl:
           
   ecosystem:
     title: Экосистема
-    
+    description: >
+      Экосистема (социально-экономическая) образуется из отношений между активными Участниками, которые вступают в обмен ценными Ресурсами. 
+      Для того, чтобы этот обмен мог осуществляться, один или несколько Участников предоставляют Продукт -- механизм, с помощью которого стороны 
+      взаимодействуют и передают Ресурсы друг другу.
     hexV:
       modes:
-        # - title: Предложения экосистемы
-        #   hexV:
-        #     # mm.parties_interested.hexQ:
-        #     # mm.products_targeted.hexQ:
-        #     mm.parties_providers.hexQ:
+        - title: Предложения экосистемы
+          description: 
+          hexV:
+            mm.products.targeted.hexQ:
+            mm.segments.hexQ:
+            mm.providers.hexQ:
+            hexR:
+              nest:
+                - <=относится к:
+
 
         - title: Использование продуктов
           hexV:
@@ -50,6 +58,37 @@ seaf.ba.ttl:
               nest:
                 - <=используется:
 
+  mm.products.targeted:
+    title: Предлагаемые продукты
+    bage: box_heart
+    hexQ:
+      mm.product.hexQ:
+        ANY<=:
+          mm.party.hexQ:
+
+  mm.segments:
+    title: Сегменты
+    bage: building_blue
+    hex:
+      =>относится к:
+        mm.segments:
+      =>заинтересован:
+        mm.products.targeted:
+    hexQ:
+      mm.party.hexQ:
+        ANY=>:
+          mm.product.hexQ:
+
+  mm.providers:
+    title: Провайдеры
+    bage: building_green_pale
+    hex:
+      <=владелец:
+        mm.products.targeted:
+    hexQ:
+      mm.party.hexQ:
+        ANY<=:
+          mm.product.hexQ:
 
 # Motivations _________________________________________________________________________________________________________
 
