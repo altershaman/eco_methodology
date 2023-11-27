@@ -57,6 +57,8 @@ seaf.ba.ttl:
             hexR:
               nest:
                 - <=используется:
+              exclude:
+                - относится к
 
   mm.products.targeted:
     title: Предлагаемые продукты

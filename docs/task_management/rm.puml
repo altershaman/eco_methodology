@@ -11,35 +11,45 @@ ganttDiagram {
 		Margin 2
 		Padding 6
 	}
+	timeline {
+        FontColor #111111
+        FontName Arial
+	}
+
 }
 </style>
 
 printscale weekly with calendar date zoom 5
-Project starts 2023-10-23
+Project starts 2023-10-30
 
 
 
 [Нормализация внешнего продуктового ландшафта] as [s01] starts 2023-11-01 and ends 2023-11-30
 [Нормализация внутреннего продуктового ландшафта] as [s02] starts 2023-11-07 and ends 2023-12-07
-[Мэппинг человеческих ресурсов на Продукты] as [s03] starts 2023-10-23 and ends 2023-12-14
-[Описание процессного ландшафта (реверс структуры BPMN)] as [s04] starts 2023-10-23 and ends 2024-01-15
-[Построение цепочек ценности] starts 2023-11-16 and requires 10 days
-[Описание мотиваций стейкхолдеров] starts 2023-11-16 and requires 10 days
-[Определение стратегии развития, KPI] starts 2023-11-16 and requires 10 days
-[Управление изменениями] starts 2023-11-16 and requires 10 days
-[Управление требованиями к автоматизации] starts 2023-11-16 and requires 10 days
-[Клиентские пути] starts 2023-11-16 and requires 10 days
-[Формирование карты способностей] starts 2023-11-16 and requires 10 days
+[Мэппинг человеческих ресурсов на Продукты] as [s03] starts 2023-12-04 and ends 2023-12-20
+[Описание процессного ландшафта (реверс структуры BPMN)] as [s04] starts 2023-12-23 and ends 2024-01-15
+--Future--
+[Построение цепочек ценности] as [s05] starts 2024-01-01 and requires 15 days
+[Описание мотиваций стейкхолдеров] as [s06] starts 2024-01-01 and requires 15 days
+[Определение стратегии развития, KPI] as [s07] starts 2024-01-01 and requires 15 days
+[Управление изменениями] as [s08] starts 2024-01-01 and requires 15 days
+[Управление требованиями] as [s09] starts 2024-01-01 and requires 15 days
+[Клиентские пути] as [s10] starts 2024-01-01 and requires 15 days
+[Формирование карты способностей] as [s11] starts 2024-01-01 and requires 15 days
 
 [s01] is 75% completed
 [s02] is 50% completed
-[s03] pauses from 2023-10-27 to 2023-12-01 and is 10% completed
+[s03] is 10% completed
+[s04] is 10% completed
 
-[s04] pauses from 2023-10-27 to 2023-12-15
+[s05] is 30% completed
+[s06] is 70% completed
+[s07] is 50% completed
+[s08] is 10% completed
+[s09] is 10% completed
+[s10] is 10% completed
+[s11] is 30% completed
 
-' 2023-10-23 to 2023-10-31 are named [Earlier]
-' 2023-11-01 to 2023-12-31 are named [Current activities]
-' 2024-01-01 to 2024-03-30 are named [Future activities]
 
 @endgantt
 
