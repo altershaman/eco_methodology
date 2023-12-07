@@ -4,6 +4,13 @@ docs:
     type: markdown      # Тип документа
     source: welcome.md  # Файл с документом
 
+  arch2:
+    location: Бизнес-архитектура/Архитектура 2.0
+    title: Архитектура 2.0
+    type: markdown
+    source: ../entities/ba/README.md
+
+
   ba_tutorial:
     location: Бизнес-архитектура/Тьюториал
     title: БА тьюториал
